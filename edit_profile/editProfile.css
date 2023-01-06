@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+body {
+  margin: 0px;
+  padding: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5em;
+  height: 4.5em;
+  top: 0;
+  background-color: transparent;
+}
+.banner .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 3.5em;
+  width: 12em;
+}
+.banner .ac-bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5em;
+}
+.banner .ac-bot a {
+  text-decoration: none;
+  color: white;
+  margin: 0.7em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+}
+.banner .ac-bot a:hover {
+  border-bottom: solid 3px #D58936;
+}
+.banner .logs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5em;
+}
+.banner .account {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.banner .account button.a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-right: -1em;
+  color: #D58936;
+  font-size: 1.2em;
+  background-color: transparent;
+  border: 2px solid #D58936;
+  border-radius: 7px;
+  padding: 0.3em 0.7em;
+  transition: all 0.2s;
+}
+.banner .account button:hover {
+  background-color: #D58936;
+  color: white;
+}
+.banner .logs button {
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+}
+.banner .dropdown-center button {
+  background-color: transparent;
+  border: #ffffff solid 1px;
+  border-radius: 7px;
+  margin-right: 1.5em;
+}
+.banner .dropdown-menu {
+  width: 5em;
+  --bs-dropdown-min-width: 8.5rem;
+}
+.banner .dropdown-item {
+  padding-left: 3.4rem;
+}
+.banner .dropdown-item:active {
+  background-color: lightgray;
+  color: black;
+}
+.banner .b2log {
+  display: flex;
+  background-color: #D58936;
+  margin: 0.7em;
+  margin-left: 0;
+  padding: 0.6em 1.2em;
+  color: #ffffff;
+  border-radius: 7px;
+  transition: background-color 0.2s;
+}
+.banner .b2log:hover {
+  background-color: #a66a29;
+}
+@media (max-width: 1200px) {
+  .banner .ac-bot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .logs {
+    margin-top: 1em;
+  }
+  .banner .banner {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .banner .ac-bot span {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    top: 0;
+    background-color: transparent;
+  }
+}
+.background {
+  background-image: url("https://wallpapercave.com/wp/wp10343429.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media (max-width: 400px) {
+  .background {
+    height: 125vh;
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  width: 100%;
+  height: 35em;
+  margin-top: 3em;
+}
+.container .block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 3em;
+  padding-bottom: 2em;
+  box-shadow: 0 0 1em black;
+}
+.container .block .backprofilePic {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 8.5em;
+  height: 206px;
+  width: 207px;
+  background-color: gray;
+  opacity: 0;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.container .block .backprofilePic p {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .block .backprofilePic:hover {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+.container .block .profilePic {
+  width: 220px;
+  position: absolute;
+  top: 8em;
+  border-radius: 50%;
+  border: #ffffff solid 7px;
+}
+.container .block .topnew {
+  width: 100%;
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .block .inputs {
+  margin-bottom: 0.6em;
+}
+.container .block .inputs input {
+  width: 13rem;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0.3em;
+  font-size: 1.3rem;
+  transition: all 0.2s;
+}
+.container .block .inputs input:focus {
+  outline: none;
+  background-color: lightgray;
+}
+.container .block .mailDisplay {
+  margin-bottom: 2em;
+}
+.container .block .botone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.container .block .editInfo {
+  width: 15em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D58936;
+  outline: 0;
+  margin-left: 0;
+  padding: 0.6em 1.2em;
+  color: #ffffff;
+  border-radius: 7px;
+  border: none;
+  transition: background-color 0.2s;
+}
+.container .block .editInfo:hover {
+  background-color: #a66a29;
+}
+.container .block .logoutBut {
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(232, 0, 0);
+  outline: 0;
+  margin-left: 1em;
+  padding: 0.6em 1.2em;
+  color: #ffffff;
+  border-radius: 7px;
+  border: none;
+  transition: background-color 0.2s;
+}
+.container .block .logoutBut:hover {
+  background-color: rgb(191, 0, 0);
+}
+.container .block .changedInfo {
+  display: none;
+  margin: 0;
+  margin-top: 0.6em;
+}
+.container .block .errorInfo {
+  display: none;
+  margin: 0;
+  margin-top: 0.6em;
+}
+@media (max-width: 1200px) {
+  .container .block .backprofilePic {
+    top: 15em;
+  }
+  .container .block .profilePic {
+    top: 15em;
+  }
+}
+@media (max-width: 1200px) {
+  .container .block .inputs input {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (max-width: 770px) {
+  .container .block .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .block .topnew {
+    margin-top: 7em;
+  }
+}/*# sourceMappingURL=editProfile.css.map */

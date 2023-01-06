@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+.background {
+  background-image: url("https://wallpapercave.com/wp/wp10343429.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .mainblock {
+  background-color: white;
+  border-radius: 0.7em;
+  padding: 1.3em;
+  font-family: "Nunito", sans-serif;
+  width: 35em;
+  height: 38em;
+  display: flex;
+  flex-direction: column;
+}
+.container .mainblock h2 {
+  margin: 0;
+  margin-top: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 3em;
+}
+.container .mainblock h3 {
+  margin: 0;
+  margin-bottom: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.container .mainblock input {
+  border: lightgray solid 1px;
+  border-radius: 5px;
+  padding: 0.8em;
+  margin-bottom: 0.5em;
+}
+.container .mainblock span {
+  margin-left: 0.5em;
+  margin-bottom: 0.2em;
+}
+.container .mainblock .obl1 {
+  display: none;
+  color: red;
+  font-size: 0.9em;
+  margin: 0;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+}
+.container .mainblock .obl2 {
+  display: none;
+  color: red;
+  font-size: 0.9em;
+  margin: 0;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+}
+.container .mainblock .obl3 {
+  display: none;
+  color: red;
+  font-size: 0.9em;
+  margin: 0;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+}
+.container .mainblock .obl4 {
+  display: none;
+  color: red;
+  font-size: 0.9em;
+  margin: 0;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+}
+.container .mainblock #subbut {
+  padding: 0.6em;
+  margin: 0.7em 0;
+  background-color: #D58936;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+  transition: background-color 0.2s;
+}
+.container .mainblock #subbut:hover {
+  background-color: #a66a29;
+}/*# sourceMappingURL=style.css.map */
