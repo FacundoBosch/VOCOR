@@ -4,7 +4,7 @@ let botText = document.getElementById('changedInfo')
 let botErrorText = document.getElementById('errorInfo')
 
 if (localStorage.getItem('user') === null){
-    location.href = "http://127.0.0.1:5500/register/registerENG.html"
+    location.href = "http://127.0.0.1:5500/registerENG.html"
 }
 
 let prevUserData = localStorage.getItem('user')
@@ -29,7 +29,7 @@ modifyBut.addEventListener('click', () => {
         botText.style.display = 'flex'
         localStorage.setItem("user", JSON.stringify(pData))
         setTimeout(function(){
-            location.href = "http://127.0.0.1:5500/edit_profile/editProfileENG.html"
+            location.href = "http://127.0.0.1:5500/editProfileENG.html"
         }, 1500)
     }
 })
@@ -37,6 +37,6 @@ modifyBut.addEventListener('click', () => {
 logoutBut.addEventListener('click', () => {
     localStorage.removeItem('user')
     setTimeout(function(){
-        location.href = "http://127.0.0.1:5500/register/registerENG.html"
+        location.href = "http://127.0.0.1:5500/indexENG.html"
     }, 500)
 })

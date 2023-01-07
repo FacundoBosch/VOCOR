@@ -29,7 +29,7 @@ modifyBut.addEventListener('click', () => {
         botText.style.display = 'flex'
         localStorage.setItem("user", JSON.stringify(pData))
         setTimeout(function(){
-            location.href = "http://127.0.0.1:5500/edit_profile/editProfile.html"
+            location.href = "http://127.0.0.1:5500/editProfile.html"
         }, 1500)
     }
 })
@@ -37,6 +37,6 @@ modifyBut.addEventListener('click', () => {
 logoutBut.addEventListener('click', () => {
     localStorage.removeItem('user')
     setTimeout(function(){
-        location.href = "http://127.0.0.1:5500/register/register.html"
+        location.href = "http://127.0.0.1:5500/index.html"
     }, 500)
 })

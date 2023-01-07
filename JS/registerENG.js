@@ -44,7 +44,7 @@ regbut.addEventListener("click", () => {
         oblig4.style.display = 'flex'
         input4.style.borderColor = 'red'
     } else {
-        location.href = "http://127.0.0.1:5500/main/indexENG.html"
+        location.href = "http://127.0.0.1:5500/indexENG.html"
     }
 
     localStorage.setItem("user", JSON.stringify(pData))

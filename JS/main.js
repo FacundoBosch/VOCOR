@@ -5,7 +5,7 @@ botbeg.addEventListener("click", () => {
     if (correo == ""){
         alert("El correo es obligatorio.")
     } else {
-        location.href = "http://127.0.0.1:5500/register/register.html"
+        location.href = "http://127.0.0.1:5500/register.html"
         localStorage.setItem("correo", correo)
     }
 })
