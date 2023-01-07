@@ -4,7 +4,7 @@ let botText = document.getElementById('changedInfo')
 let botErrorText = document.getElementById('errorInfo')
 
 if (localStorage.getItem('user') === null){
-    location.href = "http://127.0.0.1:5500/registerENG.html"
+    location.href = "https://facundobosch.github.io/VOCOR/registerENG.html"
 }
 
 let prevUserData = localStorage.getItem('user')
@@ -29,7 +29,7 @@ modifyBut.addEventListener('click', () => {
         botText.style.display = 'flex'
         localStorage.setItem("user", JSON.stringify(pData))
         setTimeout(function(){
-            location.href = "http://127.0.0.1:5500/editProfileENG.html"
+            location.href = "https://facundobosch.github.io/VOCOR/editProfileENG.html"
         }, 1500)
     }
 })
@@ -37,6 +37,6 @@ modifyBut.addEventListener('click', () => {
 logoutBut.addEventListener('click', () => {
     localStorage.removeItem('user')
     setTimeout(function(){
-        location.href = "http://127.0.0.1:5500/indexENG.html"
+        location.href = "https://facundobosch.github.io/VOCOR/indexENG.html"
     }, 500)
 })
