@@ -19,12 +19,13 @@ try {
 
 regbut.addEventListener("click", () => {
 
-    let pData = {
-        nombre: document.getElementById("name").value,
-        apellido: document.getElementById("surname").value,
-        mail: document.getElementById("mail").value,
-        pass: document.getElementById("pass").value
-    }
+  let pData = {
+    nombre: document.getElementById("name").value,
+    apellido: document.getElementById("surname").value,
+    mail: document.getElementById("mail").value,
+    pass: document.getElementById("pass").value
+}
+
     if (pData.nombre == "") {
         oblig1.style.display = 'flex'
         input1.style.borderColor = 'red'
@@ -44,7 +45,8 @@ regbut.addEventListener("click", () => {
         oblig4.style.display = 'flex'
         input4.style.borderColor = 'red'
     } else {
-        location.href = "http://127.0.0.1:5500/main/index.html"
+      
+        location.href = "http://127.0.0.1:5500/index.html"
     }
 
     localStorage.setItem("user", JSON.stringify(pData))
