@@ -36,6 +36,7 @@ modifyBut.addEventListener('click', () => {
 
 logoutBut.addEventListener('click', () => {
     localStorage.removeItem('user')
+    localStorage.removeItem('profilePic')
     setTimeout(function(){
         location.href = "https://facundobosch.github.io/VOCOR/index.html"
     }, 500)
