@@ -284,7 +284,7 @@ body {
 }
 @media (max-width: 1200px) {
   .container .block .backprofilePic {
-    top: 15em;
+    top: 15.5em;
   }
   .container .block .profilePic {
     top: 15em;
