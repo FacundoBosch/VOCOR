@@ -153,14 +153,9 @@ body {
     height: 125vh;
   }
 }
-@media (min-height: 740px) {
+@media (max-width: 992px) {
   .background {
-    height: 140vh;
-  }
-}
-@media (max-height: 670px) {
-  .background {
-    height: 165vh;
+    height: 275vh;
   }
 }
 .container {
@@ -175,7 +170,16 @@ body {
   justify-content: space-evenly;
 }
 
-.gratuito {
+@media (max-width: 992px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 95em;
+  }
+}
+.pBasic, .pPro, .pPremium {
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -185,185 +189,118 @@ body {
   border-radius: 0.7em;
   transition: all 0.2s ease-in-out;
 }
-.gratuito:hover {
+.pBasic:hover, .pPro:hover, .pPremium:hover {
   transform: scale(1.01);
 }
-.gratuito h2 {
-  font-size: 3em;
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
+.pBasic h3, .pPro h3, .pPremium h3 {
+  font-size: 2em;
+  margin: 0.4em 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.gratuito .hr1 {
+.pBasic hr, .pPro hr, .pPremium hr {
   margin: 0;
 }
-.gratuito .points {
+.pBasic .img, .pPro .img, .pPremium .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.1em 1.4em;
+}
+.pBasic .img img, .pPro .img img, .pPremium .img img {
+  width: 300px;
+}
+@media (max-width: 1200px) {
+  .pBasic .img img, .pPro .img img, .pPremium .img img {
+    width: 250px;
+  }
+}
+.pBasic .botones, .pPro .botones, .pPremium .botones {
   display: flex;
   flex-direction: column;
-  padding: 3em;
-  padding-top: 2em;
+  align-items: center;
+  justify-content: center;
+  width: auto;
 }
-.gratuito .points svg {
-  margin-right: 0.4em;
-  color: rgb(208, 0, 0);
-}
-.gratuito .points .p1 svg {
-  color: #0043d3;
-}
-.gratuito .points .ps {
-  font-size: 1.1rem;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-}
-.gratuito .points .p4 {
-  margin-bottom: 2em;
-}
-.gratuito .btn_buy {
-  margin: 2em;
+.pBasic .btn_buy, .pPro .btn_buy, .pPremium .btn_buy {
+  margin: 0em 1.5em;
   background-color: #D58936;
   color: #ffffff;
+  font-size: 1.5em;
   font-weight: 700;
   padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12em;
+  height: 2.5em;
   border-radius: 0.5em;
   border: none;
   transition: background-color 0.2s;
   cursor: pointer;
 }
-.gratuito .btn_buy:hover {
+.pBasic .btn_buy:hover, .pPro .btn_buy:hover, .pPremium .btn_buy:hover {
   background-color: #a66a29;
 }
-.gratuito .bought {
+.pBasic .btn_info, .pPro .btn_info, .pPremium .btn_info {
+  margin: 1em 1.5em;
+  margin-top: 0.5em;
+  background-color: rgb(201, 201, 201);
+  color: rgb(110, 110, 110);
+  font-size: 1em;
+  font-weight: 700;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12em;
+  height: 2.5em;
+  border-radius: 0.5em;
+  border: none;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.pBasic .btn_info:hover, .pPro .btn_info:hover, .pPremium .btn_info:hover {
+  background-color: rgb(182, 182, 182);
+}
+.pBasic .bought, .pPro .bought, .pPremium .bought {
   background-color: #a66a29;
   transition: none;
   cursor: not-allowed;
+}
+.pBasic .process, .pPro .process, .pPremium .process {
+  background-color: #a66a29;
+  transition: none;
+  cursor: wait;
+}
+@media (max-width: 1200px) {
+  .pBasic .btn_buy, .pPro .btn_buy, .pPremium .btn_buy {
+    width: 9em;
+  }
 }
 
-.normal {
-  width: 30%;
-  height: 100%;
-  background-color: white;
-  box-shadow: 0 0 1em black;
-  border-radius: 0.7em;
-  transition: all 0.2s ease-in-out;
+@media (max-width: 992px) {
+  .pBasic, .pPro, .pPremium {
+    margin-bottom: 2em;
+    width: 25em;
+  }
 }
-.normal:hover {
-  transform: scale(1.01);
+@media (max-width: 480px) {
+  .pBasic, .pPro, .pPremium {
+    width: 16em;
+  }
 }
-.normal h2 {
-  font-size: 3em;
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.normal .hr1 {
-  margin: 0;
-}
-.normal .points {
-  display: flex;
-  flex-direction: column;
-  padding: 3em;
-  padding-top: 2em;
-}
-.normal .points svg {
-  margin-right: 0.4em;
-  color: rgb(208, 0, 0);
-}
-.normal .points .p1 svg {
-  color: #0043d3;
-}
-.normal .points .ps {
-  font-size: 1.1rem;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-}
-.normal .points .p4 {
-  margin-bottom: 2em;
-}
-.normal .btn_buy {
-  margin: 2em;
+.modal-header {
   background-color: #D58936;
   color: #ffffff;
-  font-weight: 700;
-  padding: 1em;
-  border-radius: 0.5em;
-  border: none;
-  width: 83%;
-  transition: background-color 0.2s;
-  cursor: pointer;
-}
-.normal .btn_buy:hover {
-  background-color: #a66a29;
-}
-.normal .bought {
-  background-color: #a66a29;
-  transition: none;
-  cursor: not-allowed;
 }
 
-.premium {
-  width: 30%;
-  height: 100%;
-  background-color: white;
-  box-shadow: 0 0 1em black;
-  border-radius: 0.7em;
-  transition: all 0.2s ease-in-out;
+.modal-body {
+  padding: 1.8em;
 }
-.premium:hover {
-  transform: scale(1.01);
-}
-.premium h2 {
-  font-size: 3em;
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.premium .hr1 {
-  margin: 0;
-}
-.premium .points {
-  display: flex;
-  flex-direction: column;
-  padding: 3em;
-  padding-top: 2em;
-}
-.premium .points svg {
-  margin-right: 0.4em;
-  color: rgb(208, 0, 0);
-}
-.premium .points .p1 svg {
-  color: #0043d3;
-}
-.premium .points .ps {
-  font-size: 1.1rem;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-}
-.premium .points .p4 {
-  margin-bottom: 2em;
-}
-.premium .btn_buy {
-  margin: 2em;
-  background-color: #D58936;
-  color: #ffffff;
-  font-weight: 700;
-  width: 83%;
+.modal-body p {
   padding: 1em;
+  border: solid #D58936 2px;
   border-radius: 0.5em;
-  border: none;
-  transition: background-color 0.2s;
-  cursor: pointer;
-}
-.premium .btn_buy:hover {
-  background-color: #a66a29;
-}
-.premium .bought {
-  background-color: #a66a29;
-  transition: none;
-  cursor: not-allowed;
 }/*# sourceMappingURL=packs.css.map */
