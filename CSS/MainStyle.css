@@ -193,6 +193,10 @@ body {
 .main1 .topnew:hover {
   text-decoration: underline;
 }
+.main1 .topnew a {
+  color: #D58936;
+  text-decoration: none;
+}
 .main1 .topnew svg {
   margin-right: 0.5em;
   size: 3em;
@@ -294,4 +298,4 @@ body {
     width: 25em;
     height: 22em;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=mainStyle.css.map */
