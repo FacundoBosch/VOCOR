@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VOCOR - Perfil</title>
-    <link rel="stylesheet" href="./CSS/editProfile.css" />
+    <title>VOCOR - Negocios</title>
+    <link rel = "icon" href =
+    https://play-lh.googleusercontent.com/PjoJoG27miSglVBXoXrxBSLveV6e3EeBPpNY55aiUUBM9Q1RCETKCOqdOkX2ZydqVf0
+    type = "image/x-icon">
+    <link rel="stylesheet" href="./CSS/locations.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -27,7 +30,7 @@
         <div class="ac-bot">
           <div class="row1">
             <a href="packs.html">Vpacks</a>
-            <a href="locations.html">Negocios</a>
+            <a href="#">Negocios</a>
           </div>
           <div class="row2">
             <a href="#">Desarroladores</a>
@@ -71,7 +74,7 @@
                     margin-left: 21px;
                   "
                 />
-                <a class="dropdown-item eng" href="editProfileENG.html"
+                <a class="dropdown-item eng" href="locationsENG.html"
                   >English</a
                 >
               </li>
@@ -84,59 +87,98 @@
         </div>
       </div>
       <div class="container">
-        <div class="block">
-          <img
-            src="https://st3.depositphotos.com/4111759/13425/v/600/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg"
-            alt="profile Pic"
-            class="profilePic"
-          />
-          <div class="frontprofilePic" id="frontprofilePic"></div>
-          <div class="backprofilePic">
-            <input
-              type="file"
-              class="imageInput"
-              accept="image/png, image/jpg, image/jpeg"
-              title=" "
-            >
-            </input>
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-              <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-              <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-            </svg>
+        <div class="mainCard1 clickable firstCard" id="clickable1">
+          <div class="imgContainer">
+            <img
+              src="./images/VOCOR_street1.JPG"
+              alt="Argentina, Buenos Aires"
+              class="image firstImage"
+            />
           </div>
-          <div class="topnew">
-            <span>Nombre</span>
-            <span>Apellido</span>
-          </div>
-          <div class="inputs">
-            <input type="text" id="newname" />
-            <input type="text" id="newsurname" />
-          </div>
-          <p class="mailDisplay" id="mailDisplay">samplemail</p>
-          <div class="botone">
-            <button class="editInfo" id="editInfo">Guardar cambios</button>
-            <button class="logoutBut" id="logoutBut">
+          <div class="textContainer">
+            <div class="headerContainer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
+                width="55"
+                height="55"
                 fill="currentColor"
-                class="bi bi-box-arrow-in-left"
+                class="bi bi-geo-alt-fill"
                 viewBox="0 0 16 16"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"
-                />
-                <path
-                  fill-rule="evenodd"
-                  d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
                 />
               </svg>
-            </button>
+              <div class="textHeaderContainer">
+                <h2>Argentina, Buenos Aires</h2>
+                <h5>Anatole France 1020, B1826ESD Lanús</h5>
+              </div>
+            </div>
           </div>
-          <p class="changedInfo" id="changedInfo">¡Cambiado correctamente!</p>
-          <p class="errorInfo" id="errorInfo">No puedes dejar campos vacios</p>
+        </div>
+        <div class="mainCard2 clickable" id="clickable2">
+          <div class="imgContainer">
+            <img
+              src="./images/VOCOR_street2.JPG"
+              alt="Argentina, Buenos Aires"
+              class="image"
+            />
+          </div>
+          <div class="textContainer">
+            <div class="headerContainer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="55"
+                height="55"
+                fill="currentColor"
+                class="bi bi-geo-alt-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              <div class="textHeaderContainer">
+                <h2>España, Barcelona</h2>
+                <h5>C. Beethoven, 74, 08923 Sta Coloma de Gramanet</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mainCard3 clickable" id="clickable3">
+          <div class="imgContainer">
+            <img
+              src="./images/VOCOR_street3.JPG"
+              alt="Argentina, Buenos Aires"
+              class="image"
+            />
+          </div>
+          <div class="textContainer">
+            <div class="headerContainer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="55"
+                height="55"
+                fill="currentColor"
+                class="bi bi-geo-alt-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              <div class="textHeaderContainer">
+                <h2>Francia, París</h2>
+                <h5>1 Rue du Général de Gaulle, 93360 Neuilly-Plaisance</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aboutInfo">
+          <p>
+            * Todas las ubicaciones seleccionadas son aleatorias, esto es
+            solamente un ejemplo.
+          </p>
         </div>
       </div>
     </div>
@@ -146,8 +188,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"
   ></script>
-  <script src="./JS/editProfilePic.js"></script>
-  <script src="./JS/editProfile.js"></script>
+  <script src="./JS/locations.js"></script>
   <script src="./JS/registered/banner.js"></script>
   <script src="./JS/registered/registered.js"></script>
 </html>

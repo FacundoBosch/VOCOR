@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+body {
+  margin: 0px;
+  padding: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5em;
+  height: 4.5em;
+  top: 0;
+  background-color: transparent;
+}
+.banner .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 3.5em;
+  width: 12em;
+}
+.banner .ac-bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5em;
+}
+.banner .ac-bot a {
+  text-decoration: none;
+  color: white;
+  margin: 0.7em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+}
+.banner .ac-bot a:hover {
+  border-bottom: solid 3px #D58936;
+}
+.banner .logs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5em;
+}
+.banner .account {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.banner .account button.a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-right: -1em;
+  color: #D58936;
+  font-size: 1.2em;
+  background-color: transparent;
+  border: 2px solid #D58936;
+  border-radius: 7px;
+  padding: 0.3em 0.7em;
+  transition: all 0.2s;
+}
+.banner .account button:hover {
+  background-color: #D58936;
+  color: white;
+}
+.banner .logs button {
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+}
+.banner .dropdown-center button {
+  background-color: transparent;
+  border: #ffffff solid 1px;
+  border-radius: 7px;
+  margin-right: 1.5em;
+}
+.banner .dropdown-menu {
+  width: 5em;
+  --bs-dropdown-min-width: 8.5rem;
+}
+.banner .dropdown-item {
+  padding-left: 3.4rem;
+}
+.banner .dropdown-item:active {
+  background-color: lightgray;
+  color: black;
+}
+.banner .b2log {
+  display: flex;
+  background-color: #D58936;
+  margin: 0.7em;
+  margin-left: 0;
+  padding: 0.6em 1.2em;
+  color: #ffffff;
+  border-radius: 7px;
+  transition: background-color 0.2s;
+}
+.banner .b2log:hover {
+  background-color: #a66a29;
+}
+@media (max-width: 1200px) {
+  .banner .ac-bot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .logs {
+    margin-top: 1em;
+  }
+  .banner .banner {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .banner .ac-bot span {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    top: 0;
+    background-color: transparent;
+  }
+}
+.background {
+  background-image: url("https://wallpapercave.com/wp/wp10343429.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150vh;
+}
+
+@media (max-width: 1200px) {
+  .background {
+    height: 120vh;
+  }
+}
+@media (max-width: 700px) {
+  .background {
+    height: 165vh;
+  }
+}
+@media (max-width: 450px) {
+  .background {
+    height: 180vh;
+  }
+}
+@media (max-width: 376px) {
+  .background {
+    height: 225vh;
+  }
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 1em;
+  padding-top: 5em;
+}
+.container .mainCard1, .container .mainCard2, .container .mainCard3 {
+  padding: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  width: 60%;
+  height: 15em;
+  background-color: #ffffff;
+  margin: 1.2em 6em;
+  box-shadow: 0 0 1em black;
+  border-radius: 0.7em;
+  transition: all 0.2s ease-in-out;
+}
+.container .mainCard1:hover, .container .mainCard2:hover, .container .mainCard3:hover {
+  transform: scale(1.01);
+}
+.container .mainCard1 .image, .container .mainCard2 .image, .container .mainCard3 .image {
+  width: 210px;
+  box-shadow: 0 0 0.7em rgb(70, 70, 70);
+  border-radius: 0.7em;
+  margin-right: 1.3em;
+  margin-left: -0.2em;
+}
+.container .mainCard1 .headerContainer, .container .mainCard2 .headerContainer, .container .mainCard3 .headerContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: center;
+}
+.container .mainCard1 .headerContainer svg, .container .mainCard2 .headerContainer svg, .container .mainCard3 .headerContainer svg {
+  margin-right: 0.7em;
+  color: #D58936;
+}
+.container .mainCard1 .headerContainer h2, .container .mainCard2 .headerContainer h2, .container .mainCard3 .headerContainer h2 {
+  margin: 0;
+  color: #D58936;
+  font-size: 2.5em;
+}
+.container .mainCard1 .headerContainer h5, .container .mainCard2 .headerContainer h5, .container .mainCard3 .headerContainer h5 {
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #D58936;
+}
+@media (max-width: 700px) {
+  .container .mainCard1 .headerContainer h2, .container .mainCard2 .headerContainer h2, .container .mainCard3 .headerContainer h2 {
+    font-size: 1.75em;
+  }
+  .container .mainCard1 .headerContainer h5, .container .mainCard2 .headerContainer h5, .container .mainCard3 .headerContainer h5 {
+    font-size: 1em;
+    margin: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .container .mainCard1, .container .mainCard2, .container .mainCard3 {
+    width: 80%;
+  }
+}
+@media (max-width: 992px) {
+  .container .mainCard1, .container .mainCard2, .container .mainCard3 {
+    width: 40em;
+  }
+}
+@media (max-width: 700px) {
+  .container .mainCard1, .container .mainCard2, .container .mainCard3 {
+    width: 25em;
+    height: 18em;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .container .mainCard1 .image, .container .mainCard2 .image, .container .mainCard3 .image {
+    width: 120px;
+    margin: 1em 0;
+  }
+  .container .mainCard1 .headerContainer, .container .mainCard2 .headerContainer, .container .mainCard3 .headerContainer {
+    margin-top: 0.5em;
+  }
+}
+@media (max-width: 450px) {
+  .container .mainCard1, .container .mainCard2, .container .mainCard3 {
+    width: 20em;
+    height: 20em;
+  }
+  .container .mainCard1 .image, .container .mainCard2 .image, .container .mainCard3 .image {
+    width: 150px;
+  }
+  .container .mainCard1 .firstImage, .container .mainCard2 .firstImage, .container .mainCard3 .firstImage {
+    margin-top: 1.2em;
+  }
+  .container .firstCard {
+    height: 22.5em;
+  }
+}
+.container .clickable:hover {
+  cursor: pointer;
+}
+.container .aboutInfo {
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+.container .aboutInfo p {
+  color: #ffffff;
+  margin: 0;
+}/*# sourceMappingURL=locations.css.map */
