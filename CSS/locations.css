@@ -168,6 +168,11 @@ body {
     height: 225vh;
   }
 }
+@media (max-height: 420px) and (orientation: landscape) {
+  .background {
+    height: 90em;
+  }
+}
 .container {
   width: 100%;
   display: flex;

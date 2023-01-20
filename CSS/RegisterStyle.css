@@ -9,6 +9,11 @@
   justify-content: center;
 }
 
+@media (max-height: 420px) and (orientation: landscape) {
+  .background {
+    height: 50em;
+  }
+}
 .container {
   display: flex;
   align-items: center;
@@ -97,4 +102,4 @@
 }
 .container .mainblock #subbut:hover {
   background-color: #a66a29;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=registerStyle.css.map */

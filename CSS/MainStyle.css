@@ -163,6 +163,11 @@ body {
     height: 165vh;
   }
 }
+@media (max-height: 420px) and (orientation: landscape) {
+  .background {
+    height: 70em;
+  }
+}
 .main1 {
   height: 92vh;
   display: flex;
@@ -210,7 +215,7 @@ body {
 }
 .main1 .middlenew p {
   font-size: 1.3em;
-  font-weight: 700;
+  font-weight: 500;
 }
 .main1 .botnew {
   display: flex;
@@ -256,6 +261,7 @@ body {
 @media (max-width: 1200px) {
   .main1 {
     flex-direction: column;
+    align-items: center;
     height: 25em;
     padding-top: 30em;
   }
@@ -264,7 +270,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     margin-right: 0;
   }
   .main1 .middlenew h2 {
@@ -298,4 +304,4 @@ body {
     width: 25em;
     height: 22em;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=mainStyle.css.map */

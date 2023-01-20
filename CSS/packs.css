@@ -155,7 +155,22 @@ body {
 }
 @media (max-width: 992px) {
   .background {
-    height: 275vh;
+    height: 265vh;
+  }
+}
+@media (min-height: 915px) {
+  .background {
+    height: 220vh;
+  }
+}
+@media (min-height: 750px) {
+  .background {
+    height: 210vh;
+  }
+}
+@media (max-height: 420px) and (orientation: landscape) {
+  .background {
+    height: 120em;
   }
 }
 .container {
