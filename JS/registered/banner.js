@@ -2,9 +2,9 @@ let botbeg2 = document.querySelector(".b2log")
 let registered = document.getElementById('a')
 
 botbeg2.addEventListener("click", () => {
-    location.pathname = "../../register.html"
+    location.href = "https://facundobosch.github.io/VOCOR/register.html"
 })
 
 registered.addEventListener('click', () => {
-    location.pathname = '../../editProfile.html'
+    location.href = 'https://facundobosch.github.io/VOCOR/editProfile.html'
 })

@@ -4,7 +4,7 @@ let botText = document.getElementById('changedInfo')
 let botErrorText = document.getElementById('errorInfo')
 
 if (localStorage.getItem('user') === null){
-    location.pathname = "./registerENG.html"
+    location.href = "https://facundobosch.github.io/VOCOR/registerENG.html"
 }
 
 let prevUserData = localStorage.getItem('user')
@@ -29,7 +29,7 @@ modifyBut.addEventListener('click', () => {
         botText.style.display = 'flex'
         localStorage.setItem("user", JSON.stringify(pData))
         setTimeout(function(){
-            location.pathname = "./editProfileENG.html"
+            location.href = "https://facundobosch.github.io/VOCOR/editProfileENG.html"
         }, 1500)
     }
 })
@@ -38,6 +38,6 @@ logoutBut.addEventListener('click', () => {
     localStorage.removeItem('user')
     localStorage.removeItem('profilePic')
     setTimeout(function(){
-        location.pathname = "./indexENG.html"
+        location.href = "https://facundobosch.github.io/VOCOR/indexENG.html"
     }, 500)
 })
