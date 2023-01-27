@@ -44,7 +44,7 @@ regbut.addEventListener("click", () => {
         oblig4.style.display = 'flex'
         input4.style.borderColor = 'red'
     } else {
-        location.href = "https://facundobosch.github.io/VOCOR/indexENG.html"
+        location.pathname = "./indexENG.html"
     }
 
     localStorage.setItem("user", JSON.stringify(pData))

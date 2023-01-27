@@ -5,7 +5,7 @@ botbeg.addEventListener("click", () => {
     if (correo == ""){
         alert("El correo es obligatorio.")
     } else {
-        location.href = "https://facundobosch.github.io/VOCOR/register.html"
+        location.pathname = "./register.html"
         localStorage.setItem("correo", correo)
     }
 })
